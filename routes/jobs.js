@@ -19,7 +19,7 @@ router.post('/add',(req,res)=>{
         email,
         new_job
     }).then(() => res.redirect('/'))
-      .cath(err => console.log(err))
+      .catch(err => console.log(err))
 })
 
 module.exports = router
